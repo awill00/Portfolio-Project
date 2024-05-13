@@ -15,25 +15,31 @@
 <body>
     <header>
         <nav>
+          <!--<img class="logo" src="logo.png" alt="logo">
+
+            this is for the logo need to adjust side, redo logo because its pushing the menu items out-->
+
+
             <ul class="menu">
-                <a href="#"><li class="dish house">Home</li></a>
-                <a href="#"><li class="dish describe">About Me</li></a>
-                <a href="#"><li class="dish picasso">Portfolio</li></a>
-                <a href="#"><li class="dish jobby-job">Hire Me</li></a>
+                <a href="#home"><li class="dish house">Home</li></a>
+                <a href="#about-me"><li class="dish house">About Me</li></a>
+                <a href="#services"><li class="dish describe">Services</li></a>
+                <a href="#portfolio"><li class="dish picasso">Portfolio</li></a>
+                <a href="#contact-me"><li class="dish jobby-job">Contact</li></a>
             </ul>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="headline">
             <h1 class="elevator">
                 <span class="me">Akia Williams</span>
                 <span class="what-i-do">Front-End Web Developer</span>
             </h1>
-
+            <!--below are contact me and portfolio buttons-->
             <div class="push-it">
-                <input class="employed space" type="button" value="Hire Me">
+                <a href="#contact-me"><input class="employed space" type="button" value="Contact Me"></a>
 
-                <input class="employed" type="button" value="Portfolio">
+                <a href="#portfolio"><input class="employed" type="button" value="Portfolio"></a>
             </div>
            
         </div>
@@ -43,7 +49,7 @@
     </section>
     <section class="who-am-i">
 
-          <div class="provide"><p class="statement">I'm Akia, and I'm here to make your website needs easier. Whether it's a new website, logo, or just for fun I can do it all!</p>
+          <div class="provide"><p class="statement">I'm Akia, and I'm here to make your website needs easier. </p>
         </div> 
 
         <div class="hammer">
@@ -56,20 +62,44 @@
             </span>  
             <span class="live">Story</span>
             
-            <!--the live class is inside the four class-->
+            <!--going to rewrite-->
         </p>
         </div>
       
     </section>
-    <section class="my-work">
-        <h3>Portfolio</h3>
-        <h2>Recent Work</h2>
+    <section class="my-work" id="portfolio">
+        <h2>Portfolio</h2>
+        
+        <!--going to add recent work to gallery-->
+        <div class="gallery">
+            <a class="recipe" href="fewdclass2.28/recipe.html"><img src="applecrisp.png" alt="apple crisp recipe site"><a>
+            <img src="about-albany.png" alt="informational website about the gardens of albany">
+            <img src="#" alt="">
+            <img src="#" alt="">
+        </div>
+    </section>
+    <section id="contact-me">
+        <h2 class="call-me">Contact Me</h2>
+        <form class="tower">
+
+            <label class="who-are-you" for="first-name">First Name:<input type="text" name="first-name" id="name-inputs"></label>
+            
+
+            <label class="who-are-you"  for="last-name">Last Name:<input type="text" name="last-name" id="name-inputs"></label>
+            
+
+            <label class="who-are-you email-title"  for="email">Email:<input type="email" name="email-address" id="email-input"></label>
+            
+            <textarea name="comment" placeholder="Add your message here..."></textarea>
+
+            <input class="submition employed " type="button" value="Submit">
+        </form >
     </section>
     <footer>
-        <img src="github.svg" alt="">
-        <img src="facebook.svg" alt="">
-        <img src="twitter.svg" alt="">
-        <img src="instagram.svg" alt="">
+        <img src="github.svg" alt="git hub icon in white">
+        <img src="facebook.svg" alt="facebook icon in white">
+        <img src="twitter.svg" alt="twitter icon in white">
+        <img src="instagram.svg" alt="instagram icon in white">
         
     </footer>
 </body>
