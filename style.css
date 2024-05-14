@@ -23,6 +23,12 @@ nav {
     color: rgb(72, 119, 115);
     font-family: sans-serif;
     margin: 0 0 0 500px ;
+
+/*navigation menu turns into  hamburger menu*/
+
+@media screen (max-width: 800px) {
+
+}
 }
 
  .dish {
@@ -227,11 +233,13 @@ footer img {
 /*match the font to the rest of the page*/
 }
 
+/*.call-me is the h2 for Contact Me*/
 .call-me {
     text-align: center;
     font-size: 40px;
     color: white;
     font-family: Arial, sans-serif;
+    padding-top: 20px;
    
 }
 /*tower is the form element */
@@ -240,6 +248,7 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
     
 }
 
@@ -291,3 +300,4 @@ label {
     margin-right: 25px;
     margin-left: 60px;
 }
+
